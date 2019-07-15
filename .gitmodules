@@ -1,0 +1,12 @@
+[submodule "modules/review"]
+	path = modules/review
+	url = https://github.com/bedroost/review.git
+[submodule "modules/booking"]
+	path = modules/booking
+	url = https://github.com/bedroost/booking.git
+[submodule "modules/gallery"]
+	path = modules/gallery
+	url = https://github.com/bedroost/gallery.git
+[submodule "modules/description"]
+	path = modules/description
+	url = https://github.com/bedroost/description.git
