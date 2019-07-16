@@ -7,35 +7,37 @@
     <link>
   </head>
   <body>
-    <div class="containerApp">
+    <div class="room">
+      <div class="containerApp">
 
-      <div class="containerHead">
-
-        <div class="containerNav">
-          <div>Nav Bar</div>
+        <div class="containerHead">
+          <div class="containerNav">
+            <div>Nav Bar</div>
+          </div>
+          <div class="containerGallery">
+            <div id="rootGallery"><div>
+          </div>
         </div>
 
-        <div class="containerGallery">
-          <div id="rootGallery"><div>
-        </div>
+        <div class="containerBody">
+          <div class="bodyLeft">
+            <div class="containerDescription">
+              <img src="./client/public/ScreenshotDescription.png" />
+            </div>
+            <div class="containerReview">
+              <div id="rootReview"></div>
+            </div>
+          </div>
 
+          <div class="bodyRight">
+            <div class="containerBooking">
+              <div id="rootBooking"></div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="containerBody">
-        <div class="containerDescription">
-          <img src="./client/public/ScreenshotDescription.png" />
-        </div>
-  
-        <div class="containerBooking">
-          <div id="rootBooking"></div>
-        </div>
-  
-        <div class="containerReview">
-          <div id="rootReview"></div>
-        </div>
-      </div>
-
     </div>
+
     <script src="./modules/booking/client/dist/main.js"></script>
     <script src="./modules/gallery/public/dist/bundle.js"></script>
     <script src="./modules/review/client/dist/bundle.js"></script>
