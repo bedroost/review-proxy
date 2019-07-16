@@ -3,14 +3,41 @@
     <meta charset="UTF-8">
     <title>Bedroost: Review Proxy</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link>
   </head>
   <body>
-    <p>This is my page</p>
-    <div id="rootGallery"><div>
-    <div id="rootBooking"></div>
-    <div id="rootReview"></div>
+    <div class="containerApp">
+
+      <div class="containerHead">
+
+        <div class="containerNav">
+          <div>Nav Bar</div>
+        </div>
+
+        <div class="containerGallery">
+          <div id="rootGallery"><div>
+        </div>
+
+      </div>
+
+      <div class="containerBody">
+        <div class="containerDescription">
+          <img src="./client/public/ScreenshotDescription.png" />
+        </div>
+  
+        <div class="containerBooking">
+          <div id="rootBooking"></div>
+        </div>
+  
+        <div class="containerReview">
+          <div id="rootReview"></div>
+        </div>
+      </div>
+
+    </div>
     <script src="./modules/booking/client/dist/main.js"></script>
-    <!-- <script src="./modules/gallery/public/dist/bundle.js"></script> -->
+    <script src="./modules/gallery/public/dist/bundle.js"></script>
     <script src="./modules/review/client/dist/bundle.js"></script>
   </body>
 </html>
