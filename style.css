@@ -5,11 +5,23 @@
 
 .containerBody {
   max-width: 1080px;
-  margin: 32px auto;
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
   justify-content: space-between;
+}
+
+.containerFoot {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .bodyLeft {
@@ -29,6 +41,16 @@
   position: -webkit-sticky;
   position: sticky;
   top: 4rem;
+}
+
+.morePlacesToStay {
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+
+.thingsToDoNearby {
+  margin-top: 80px;
+  margin-bottom: 16px;
 }
 
 #description {
