@@ -3,11 +3,6 @@
   flex-direction: column;
 }
 
-img.resize {
-  width:550px;
-  height: auto;
-}
-
 .containerBody {
   max-width: 1080px;
   margin: 32px auto;
@@ -34,4 +29,14 @@ img.resize {
   position: -webkit-sticky;
   position: sticky;
   top: 4rem;
+}
+
+#description {
+  width:550px;
+  height: auto;
+}
+
+#neighborhood {
+  width:550px;
+  height: auto;
 }
