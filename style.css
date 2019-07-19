@@ -3,8 +3,33 @@
   flex-direction: column;
 }
 
+.containerHead {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid green;
+}
+.containerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navLogo {
+  max-width: 20px;
+}
+
+.navButtonList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navProfile {
+  max-width: 20px;
+}
+
 .containerBody {
-  max-width: 1080px;
+  max-width: 1200px;
   margin-top: 32px;
   margin-bottom: 0;
   margin-right: auto;
@@ -13,6 +38,8 @@
   padding-right: 24px;
   display: flex;
   justify-content: space-between;
+  border: 5px solid yellow;
+  position: relative;
 }
 
 .containerFoot {
@@ -30,6 +57,12 @@
   align-items: center;
 }
 
+.bodyRight {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
 .containerDescription {
   max-width: 594px;
   display: flex;
@@ -38,9 +71,21 @@
 }
 
 .containerBooking {
+  width: 436px;
+  border: 1px solid red;
+  height: calc(100% - 500px);
+}
+
+#rootBooking {
   position: -webkit-sticky;
   position: sticky;
   top: 4rem;
+  bottom: 200px;
+  /* bottom: 4rem; */
+}
+
+.containerFoot {
+  border: 5px solid purple;
 }
 
 .morePlacesToStay {
