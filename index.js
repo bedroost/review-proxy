@@ -17,7 +17,19 @@ app.get('/api/:listingid/booking', (req, res) => {
     .catch(error => console.log(error));
 });
 
-// Descriptions
+// Description
+app.get('/listing/desc/:listingID', (req, res) => {
+  axios.get(`http://18.221.218.103/listing/desc/${req.params.listingID}`)
+  .then(result => res.send(result.data))
+  .catch(error => console.log(error));
+});
+
+// Amenities
+app.get('/listing/amenity/:listingID', (req, res) => {
+  axios.get(`http://18.221.218.103/listing/amenity/${req.params.listingID}`)
+  .then(result => res.send(result.data))
+  .catch(error => console.log(error));
+});
 
 // Gallery 
 app.get('/api/:listingid/images', (req, res) => {
@@ -26,7 +38,7 @@ app.get('/api/:listingid/images', (req, res) => {
     .catch(error => console.log(error));
 });
 
-// Reviews
+// Review
 app.get('/api/:listingid/reviews', (req, res) => {
   axios.get(`http://ec2-13-57-195-146.us-west-1.compute.amazonaws.com/api/${req.params.listingid}/reviews`)
     .then(result => res.send(result.data))
