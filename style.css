@@ -68,9 +68,9 @@ html {
   height: 60%;
   width: 450px;
   -webkit-transition-property: width; /* Safari */
-  -webkit-transition-duration: 2s; /* Safari */
+  -webkit-transition-duration: .5s; /* Safari */
   transition-property: width;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .spyglassSearchB:focus-within {
