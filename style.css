@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .containerApp {
   display: flex;
   flex-direction: column;
@@ -12,20 +16,66 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navLogo {
-  max-width: 20px;
+  font-size: 45px;
+  height: 1em;
+  width: 1.1em;
+  padding: 18px;
+}
+
+.navButtons {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 .navButtonList {
   display: flex;
   flex-direction: row;
   list-style: none;
+  height: 100%;
+}
+
+.navButtonDiv {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  color: #484848;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.navButtonDiv:hover {
+  border-bottom: 2px solid #8b8a8a; 
+  cursor: pointer;
+}
+
+.navButton {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  background-color: none;
+  pointer-events: none; 
+}
+
+.navButton:hover {
+  text-decoration: none;
 }
 
 .navProfile {
-  max-width: 20px;
+  font-size: 45px;
+  height: 1em;
+  width: 1em;
+}
+
+@media screen and (max-width: 1028px) {
+  .navButtons {
+      display: none !important;
+  }
 }
 
 .containerBody {
