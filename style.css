@@ -38,7 +38,7 @@ html {
 }
 
 .searchB {
-  width: 300px;
+  width: 100%;
   background: transparent;
   display: flex;
   justify-content: flex-start;
@@ -49,6 +49,7 @@ html {
   font-weight: bold !important;
   outline: none;
   border: none;
+  width: 100%;
 }
 
 .spyglassSearchContainerB {
@@ -65,7 +66,7 @@ html {
   position: relative;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   height: 60%;
-  width: 300px;
+  width: 450px;
   -webkit-transition-property: width; /* Safari */
   -webkit-transition-duration: 2s; /* Safari */
   transition-property: width;
