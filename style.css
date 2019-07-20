@@ -10,7 +10,6 @@ html {
 .containerHead {
   display: flex;
   flex-direction: column;
-  border: 3px solid green;
 }
 .containerNav {
   display: flex;
@@ -19,11 +18,77 @@ html {
   align-items: center;
 }
 
+.navLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+}
+
 .navLogo {
   font-size: 45px;
   height: 1em;
   width: 1.1em;
   padding: 18px;
+}
+
+.searchB {
+  width: 300px;
+  background: transparent;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.searchInputFieldB {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  outline: none;
+  border: none;
+}
+
+.spyglassSearchContainerB {
+  display: flex;
+  align-items: center;
+}
+
+.spyglassSearchB {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 3px;
+  border: 0.75px solid #EBEBEB;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 60%;
+  width: 300px;
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+.spyglassSearchB:focus-within {
+  width: 550px;
+}
+
+.spyglassB {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+}
+
+.material-icons {
+  height: 1em;
+  width: 1em;
+  font-size: 18px;
 }
 
 .navButtons {
@@ -42,7 +107,10 @@ html {
 .navButtonDiv {
   display: flex;
   align-items: center;
-  padding: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top: 18px;
+  padding-bottom: 14px;
   color: #484848;
   background-color: transparent;
   border-bottom: 2px solid transparent;
@@ -59,7 +127,8 @@ html {
   padding: 0;
   border: none;
   background-color: none;
-  pointer-events: none; 
+  pointer-events: none;
+  height: 95%;
 }
 
 .navButton:hover {
@@ -80,7 +149,6 @@ html {
 
 .containerBody {
   max-width: 1200px;
-  margin-top: 32px;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
@@ -88,7 +156,7 @@ html {
   padding-right: 24px;
   display: flex;
   justify-content: space-between;
-  border: 5px solid yellow;
+  border: 1px solid yellow;
   position: relative;
 }
 
@@ -108,9 +176,9 @@ html {
 }
 
 .bodyRight {
-  background-color: aqua;
   display: flex;
   justify-content: center;
+  border: 1px dotted red;
 }
 
 .containerDescription {
@@ -161,4 +229,33 @@ html {
 #thingsToKeepInMind {
   width:550px;
   height: auto;
+}
+
+/* GALLERY MODULE */
+#style__galleryBigImage___HTRYl {
+  height: 418px;
+  overflow: hidden;
+  flex: 1 1 auto;
+  border-top: .5px solid #484848;
+  border-bottom: .5px solid #484848;
+}
+.style__galleryContainer1___25jQ9 {
+  border-left: 1px solid #484848;
+  border-collapse: collapse;
+}
+
+
+.style__galleryContainer3___26UHC {
+  border-left: 1px solid #484848;
+  border-collapse: collapse;
+}
+
+#style__galleryImage___6P_QQ0 {
+  border: none;
+  overflow: hidden;
+}
+
+/* DESCRIPTION MODULE */
+#description .main .summary {
+  height: 160px;
 }
