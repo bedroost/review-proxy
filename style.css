@@ -157,7 +157,7 @@ html {
   padding-right: 24px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   position: relative;
 }
 
@@ -173,24 +173,34 @@ html {
 .bodyLeft {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
 }
 
 .bodyRight {
   display: flex;
   justify-content: center;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 .containerDescription {
   width: 642px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 12px;
+  padding-left: 5px;
+  margin: 0px !important;
+}
+
+.containerReview {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+  width: 100%;
 }
 
 .containerBooking {
-  width: 436px;
+  width: 448px;
   /* border: 1px solid red; */
   height: calc(100% - 500px);
 }
@@ -204,7 +214,7 @@ html {
 }
 
 .containerFoot {
-  border: 5px solid purple;
+  /* border: 5px solid purple; */
 }
 
 .morePlacesToStay {
@@ -264,5 +274,50 @@ html {
 #description {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+/* REVIEW */
+#rootReview {
+  display: flex;
+  justify-content: flex-start;
+  width: 649px;
+}
+
+.style__reviewApp--2fIuk {
+  margin: 0px !important;
+  width: 100% !important;
+}
+
+/* NEIGHBORHOOD */
+.containerNeighborhood {
+  width: 642px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+#neighborhood {
+  padding-top: 42px;
+  width: 594px;
+  height: auto;
+}
+
+.main {
+  padding: 0px !important;
+}
+
+/* THINGS TO KEEP IN MIND */
+.containerThingsToKeepInMind {
+  width: 642px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+#thingsToKeepInMind {
+  width: 594px;
+  height: auto;
 }
