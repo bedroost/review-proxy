@@ -8,7 +8,7 @@ const axios = require('axios');
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
-app.use('/rooms/:listingid', express.static(path.join(__dirname)));
+app.use('/rooms/:listingid', express.static(path.join(__dirname, 'client', 'public')));
 
 // Booking
 app.get('/api/:listingid/booking', (req, res) => {
@@ -24,7 +24,7 @@ app.get('/listing/desc/:listingID', (req, res) => {
   .catch(error => console.log(error));
 });
 
-// Amenities
+// Amenity
 app.get('/listing/amenity/:listingID', (req, res) => {
   axios.get(`http://18.221.218.103/listing/amenity/${req.params.listingID}`)
   .then(result => res.send(result.data))
