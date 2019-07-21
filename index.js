@@ -12,7 +12,6 @@ app.use('/rooms/:listingid', express.static(path.join(__dirname, 'client', 'publ
 
 // Lazy-Load
 app.get('/lazy-load.js', (req, res) => {
-  console.log("hi from lazy load");
   const pathname = path.join(__dirname, 'lazy-load.js');
   res.sendFile(pathname);
 });
