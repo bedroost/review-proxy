@@ -10,6 +10,13 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use('/rooms/:listingid', express.static(path.join(__dirname, 'client', 'public')));
 
+// Lazy-Load
+app.get('/lazy-load.js', (req, res) => {
+  console.log("hi from lazy load");
+  const pathname = path.join(__dirname, 'lazy-load.js');
+  res.sendFile(pathname);
+});
+
 // Booking
 app.get('/api/:listingid/booking', (req, res) => {
   axios.get(`http://ec2-13-52-61-34.us-west-1.compute.amazonaws.com/api/${req.params.listingid}/booking`)
