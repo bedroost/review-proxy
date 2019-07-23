@@ -46,7 +46,7 @@ app.get('/api/:listingid/images', (req, res) => {
 
 // Review
 app.get('/api/:listingid/reviews', (req, res) => {
-  axios.get(`http://ec2-13-57-195-146.us-west-1.compute.amazonaws.com/api/${req.params.listingid}/reviews`)
+  axios.get(`http://ec2-13-52-78-114.us-west-1.compute.amazonaws.com/api/${req.params.listingid}/reviews`)
     .then(result => res.send(result.data))
     .catch(error => console.log(error));
 });
